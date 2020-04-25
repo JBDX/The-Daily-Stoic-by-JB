@@ -4,6 +4,11 @@
     color: #999;
     background: white;
     border: solid 1px #999;
+    border-radius: 3px ;
+}
+
+.subscribe :hover {
+  background: darkolivegreen !important;
 }
 
 .blog-header {
@@ -75,7 +80,7 @@
   }
 
   .featured-article{
-    background-image: url("../../Featured-article.png") ;
+    background-image: url(__dirname + "/Featured-article.png") ;
     background-size: cover;
     background-position: right;
   }
@@ -117,3 +122,12 @@
     margin-bottom: 0;
   }
 
+.back-to-top {
+  color: #6ab04c;
+  text-decoration: none;
+}
+
+.back-to-top:hover{
+  text-decoration: none;
+  color: #3e612f;
+}
