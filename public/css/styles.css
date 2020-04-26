@@ -5,10 +5,73 @@
     background: white;
     border: solid 1px #999;
     border-radius: 3px ;
+    box-shadow: none;
 }
 
-.subscribe :hover {
-  background: darkolivegreen !important;
+.subscribe:hover {
+  background: #6ab04c;
+  border-color: rgb(108, 136, 61);
+  color: rgb(70, 70, 70) !important;
+  box-shadow: none !important;
+}
+
+
+
+.container{
+  text-align: center;
+}
+
+
+
+/* Subscribe Page */
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+
+
+
+
+/* NAVBAR */
+
+
+.nav-elements{
+  transition: 0.3s;
+  border-radius: 3px;
+}
+
+.nav-elements:hover {
+  text-decoration: none;
+  background-color: rgb(243, 243, 243);
 }
 
 .blog-header {
@@ -80,7 +143,7 @@
   }
 
   .featured-article{
-    background-image: url(__dirname + "/Featured-article.png") ;
+    background-image: url() ;
     background-size: cover;
     background-position: right;
   }
