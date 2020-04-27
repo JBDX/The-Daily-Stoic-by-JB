@@ -12,6 +12,10 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.get("/", function(req, res){
+    res.render("home");
+});
+
 app.get("/home", function (req, res){
     res.render("home");
 });
@@ -30,6 +34,13 @@ app.get("/language", function(req, res){
 });
 app.get("/subscribe", function(req, res){
     res.render("subscribe");
+});
+app.get("/compose", function(req, res){
+    res.render("compose");
+});
+
+app.get("/post", function(req, res){
+    res.render("post");
 });
 
 

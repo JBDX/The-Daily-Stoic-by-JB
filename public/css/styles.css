@@ -6,6 +6,7 @@
     border: solid 1px #999;
     border-radius: 3px ;
     box-shadow: none;
+    font-family: 'Montserrat';
 }
 
 .subscribe:hover {
@@ -20,6 +21,9 @@
 .container{
   text-align: center;
 }
+
+
+
 
 
 
@@ -67,6 +71,7 @@
 .nav-elements{
   transition: 0.3s;
   border-radius: 3px;
+  font-family: 'Montserrat';
 }
 
 .nav-elements:hover {
@@ -86,6 +91,7 @@
   
   .blog-header-logo:hover {
     text-decoration: none;
+
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -194,3 +200,19 @@
   text-decoration: none;
   color: #3e612f;
 }
+
+/* POST PAGE */
+
+.post{
+  font-size:20px;
+  font-family: 'Montserrat' ;
+}
+
+.date{
+  font-family: 'Montserrat';
+}
+
+.content-writer{
+  font-family: 'Montserrat';
+}
+
