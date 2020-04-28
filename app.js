@@ -4,13 +4,24 @@ const express = require("express");
 
 const bodyParser = require("body-parser");
 const https= require("https")
+const ejs = require("ejs");
+const mongoose=require("mongoose")
 
 const app = express()
+
+mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true, useUnifiedTopology: true});
+
+const postSchema = {
+    title: String,
+    content: String
+  };
 
 app.set('view engine', 'ejs');
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
+
+const Post = mongoose.model("Post", postSchema);
 
 app.get("/", function(req, res){
     res.render("home");
@@ -43,7 +54,9 @@ app.get("/post", function(req, res){
     res.render("post");
 });
 
-
+app.get("/subscribe-success", function(req, res){
+    res.render("subscribe-success");
+});
 
 app.listen(3000, function(){
     console.log("Server is up and running baby!");
